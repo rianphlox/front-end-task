@@ -1,0 +1,33 @@
+/* Define global CSS custom properties for the light theme */
+:root {
+    --background: #ffffff; /* Light mode background color */
+    --text-color: #000000; /* Light mode text color */
+    --transition: all 0.3s ease; /* Smooth transition for theme changes */
+}
+
+/* Override properties for dark theme when data-theme attribute is set to 'dark' */
+[data-theme="dark"] {
+    --background: #1a1a1a; /* Dark mode background color */
+    --text-color: #ffffff; /* Dark mode text color */
+}
+
+/* Style the content div with custom properties */
+.content {
+    background-color: var(--background); /* Use custom background color */
+    color: var(--text-color); /* Use custom text color */
+    padding: 20px; /* Add padding for visibility */
+    transition: var(--transition); /* Apply smooth transition */
+}
+
+/* Style the toggle button */
+button {
+    padding: 10px 20px; /* Add padding for better appearance */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Indicate clickable element */
+    transition: var(--transition); /* Apply smooth transition for hover effect */
+}
+
+/* Hover effect for the button */
+button:hover {
+    opacity: 0.8; /* Reduce opacity on hover for interactivity */
+}
